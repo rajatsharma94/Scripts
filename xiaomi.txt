@@ -1,0 +1,6 @@
+ 
+npm install miio
+
+miio --discover
+ 
+miio --control 48619717 --method set_power --params '["on"]'

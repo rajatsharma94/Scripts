@@ -17,8 +17,6 @@ keep2 = gkeepapi.Keep()
 success = keep2.login(email2, pass2)
 
 while True:
-    keep1.sync()
-    keep2.sync()
     gnotes1 = keep1.all()
     gnotes2 = keep2.all()
     for gnote1 in gnotes1:
@@ -28,5 +26,7 @@ while True:
                 print("modifying "+gnote1.id+", setting"+str(gnote1.archived))
 
     time.sleep(300) # sleep for 5 minutes
+    keep1.sync()
+    keep2.sync()
 
 print("exiting keep program")

@@ -6,3 +6,5 @@ gkeeparchive
 - make sure Python is installed
 - make sure pip is installed
 - run `sudo pip install gkeepapi`
+- install supervisord
+- add supervisor config
